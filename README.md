@@ -1,1 +1,1 @@
-# Howto deploy an abp.io app to Azure with AzureDevOps  
+# Howto deploy an abp.io application to Azure with AzureDevOps  
