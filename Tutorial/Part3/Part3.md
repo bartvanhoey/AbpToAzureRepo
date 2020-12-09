@@ -30,9 +30,9 @@
 
 15. Click on **Show database connection strings** and copy the connection string
 
-16. Copy/paste the *appsettings.json* file and rename it to *appsettings.Staging.json* in both the *[YourAppName].HttpApi.Host* and *[YourAppName].DbMigrator* project.
+16. Copy/paste the *appsettings.json* file and rename it to *appsettings.Staging.json* in both the *YourAppName].HttpApi.Host* and *[YourAppName].DbMigrator* project.
 
-17. Replace the *Default connection* string in the *appsettings.Staging.json* files of both the *[YourAppName].HttpApi.Host* and*[YourAppName].DbMigrator* project.
+17. Replace the *Default connection* string in the *appsettings.Staging.json* files of both the *[YourAppName].HttpApi.Host* and *[YourAppName].DbMigrator* project.
 
 18. Do not forget to replace {your_password} with the correct server password you entered in Azure.
 
