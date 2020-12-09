@@ -5,6 +5,8 @@ using Microsoft.Extensions.Hosting;
 using AbpToAzure.Data;
 using Serilog;
 using Volo.Abp;
+using Microsoft.Extensions.Configuration;
+using System;
 
 namespace AbpToAzure.DbMigrator
 {
@@ -23,6 +25,10 @@ namespace AbpToAzure.DbMigrator
             {
                 options.UseAutofac();
                 options.Services.AddLogging(c => c.AddSerilog());
+
+                  // Add this line of code to make it possible read from appsettings.Staging.json
+                options.Services.ReplaceConfiguration(BuildConfiguration());
+
             }))
             {
                 application.Initialize();
@@ -37,6 +43,21 @@ namespace AbpToAzure.DbMigrator
                 _hostApplicationLifetime.StopApplication();
             }
         }
+  private static IConfiguration BuildConfiguration()
+    {
+        var configurationBuilder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
+  
+        // Extra code block to make it possible to read from appsettings.Staging.json
+        var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+        if (environmentName == "Staging")
+        {
+        configurationBuilder.AddJsonFile($"appsettings.{environmentName}.json", true);
+        }
+  
+        return configurationBuilder
+            .AddEnvironmentVariables()
+            .Build();
+    }
 
         public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
     }

@@ -32,4 +32,11 @@
     <ProjectReference Include="..\AbpToAzure.EntityFrameworkCore.DbMigrations\AbpToAzure.EntityFrameworkCore.DbMigrations.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="appsettings.Staging.json">
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+</ItemGroup>
+
 </Project>

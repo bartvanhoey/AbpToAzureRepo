@@ -1,6 +1,6 @@
 ## Part 2: Create a new abp.io application
 
-1. Check your dotnet version. Should be at least* 5.0.x.
+1. Check your dotnet version. Should be at least 5.0.x.
 
    ````bash
    dotnet --version
@@ -58,8 +58,8 @@
 
     ```bash
     git add .
-    git commit -m InitialCommit
+    git commit -m Part2Completed
     git push
     ```
 
-[Previous](Tutorial/../../Part1/Part1.md) | [Next](Tutorial/../../Part3/Part3.md)
+[Home](./../../README.md) | [Previous](Tutorial/../../Part1/Part1.md) | [Next](Tutorial/../../Part3/Part3.md)
