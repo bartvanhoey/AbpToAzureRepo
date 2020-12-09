@@ -44,5 +44,13 @@
 
 22. In the *1 published; 1 consumed* folder you should now have 2 zip Artifacts. 1 for the *[YourAppName].Blazor* project and 1 for the *[YourAppName].HttpApi.Host* project
 
-
 [Home](./../../README.md) | [Previous](Tutorial/../../Part3/Part3.md) | [Next](Tutorial/../../Part5/Part5.md)
+
+### Overview Setting Build Pipeline Tasks
+
+  ![Use .NET Core Sdk Task](Tutorial/../Images/UseDotNetCoreSdkTask.jpg)
+  ![Restore Task](Tutorial/../Images/RestoreTask.jpg)
+  ![Build Task](Tutorial/../Images/BuildTask.jpg)
+  ![Test Task](Tutorial/../Images/TestTask.jpg)
+  ![Publish Task](Tutorial/../Images/Publish.jpg)
+  ![Publish Artifact Task](Tutorial/../Images/PublishArtifactTask.jpg)
