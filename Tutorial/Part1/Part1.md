@@ -1,4 +1,4 @@
-# Part 1: Create a new GitHub repository
+## Part 1: Create a new GitHub repository
 
 1. Navigate to your [GitHub.com](GitHub.com) and click **New Repository**.
 
@@ -13,3 +13,5 @@
    ```
 
 5. Navigate into the GitHub repository folder and delete the *index.md* and *_config.yml* files.
+
+[Home](./../../README.md) | [Next](Tutorial/../../Part2/Part2.md)
