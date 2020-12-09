@@ -1,13 +1,15 @@
-# Part1: Create a new GitHub repository
+# Part 1: Create a new GitHub repository
 
-1. Fill in *Repository Name*  and click **Create repository** on [GitHub.com](GitHub.com) to create a new repository (keep all the default settings)
+1. Navigate to your [GitHub.com](GitHub.com) and click **New Repository**.
 
-2. In the repository *Settings* tab navigate to the *Github Pages* section. Click on the **Choose a theme** button first and on the **Select theme** button next. Finally click on the **Commit changes** button
+2. Fill in *Repository Name*  and click **Create repository** to create a new repository (keep all the default settings).
 
-3. Open a command prompt and clone the repository into a folder on your computer
+3. In the repository *Settings* tab navigate to the *Github Pages* section. Click on the **Choose a theme** button first and on the **Select theme** button next. Finally click on the **Commit changes** button.
+
+4. Open a command prompt and clone the repository into a folder on your computer
   
    ```batch
    git clone https://github.com/your-username/your-repository-name.git
    ```
 
-4. Navigate into the GitHub repository folder and delete the *index.md* and *_config.yml* files
+5. Navigate into the GitHub repository folder and delete the *index.md* and *_config.yml* files.
