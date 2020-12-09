@@ -19,3 +19,7 @@ To follow along you need .NET 5.x and ABP.IO Platform v4.x installed. I use Visu
 [Part 7: Release pipeline finished, API deployment succeeded. Web App not working! How to fix the issues?](Tutorial/Part7/Part7.md)
 
 [Part 8: Create a Web App in the Azure Portal to deploy [YourAppName].Blazor project](Tutorial/Part8/Part8.md)
+
+[Part 9: Add extra Stage in the Release pipeline in AzureDevops to deploy [YourAppName].Blazor project](Tutorial/Part9/Part9.md)
+
+[Part 10: Release pipeline finished, Blazor deployment succeeded. Web App not working! How to fix the issues?](Tutorial/Part10/Part10.md)
