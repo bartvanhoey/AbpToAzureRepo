@@ -12,4 +12,10 @@ To follow along you need .NET 5.x and ABP.IO Platform v4.x installed. I use Visu
 
 [Part 4: Setup the Build pipeline in AzureDevops and publish the Build Artifacts](Tutorial/Part4/Part4.md)
 
-[Part 5: Create Web App in Azure Portal to deploy [YourAppName].HttpApi.Host project](Tutorial/Part4/Part4.md)
+[Part 5: Create Web App in Azure Portal to deploy [YourAppName].HttpApi.Host project](Tutorial/Part5/Part5.md)
+
+[Part 6: Create Release pipeline in AzureDevops and deploy [YourAppName].HttpApi.Host project](Tutorial/Part6/Part6.md)
+
+[Part 7: Release pipeline finished, API deployment succeeded. Web App not working! How to fix the issues?](Tutorial/Part7/Part7.md)
+
+[Part 8: Create a Web App in the Azure Portal to deploy [YourAppName].Blazor project](Tutorial/Part8/Part8.md)
