@@ -24,13 +24,13 @@
 
 12. Click the **Review + create** button. Click the **Create** button next.
   
-    ![Web App Settings](Tutorial/../Images/CreateWebAppForAPI.jpg)
+    ![API Web App Settings](Tutorial/../Images/CreateWebAppForAPI.jpg)
 
 13. Click on **Go to resource** when the Web App has been created.
 
 14. Click on **Configuration** in the left menu and click + **+ New application setting** in the *Application settings* window.
 
-15. Enter *ASPNETCORE_ENVIRONMENT* in the *Name* field and *Staging* in the *Value* field. Click the **OK**, **Save** and **Continue** buttons.Close the *Configuration* window.
+15. Enter *ASPNETCORE_ENVIRONMENT* in the *Name* field and *Staging* in the *Value* field. Click the **OK**, **Save** and **Continue** buttons and close the *Configuration* window afterwards.
 
 16. Copy the URL of the Web App.
 
