@@ -1,4 +1,4 @@
-# Continuous Deployment of an abp.io app to Azure with AzureDevOps  
+# Continuous Deployment of an abp.io app to Azure
 
 In this **step-by-step tutorial** I will show you a possible **Continuous Deployment** setup in **Azure Pipelines** to automate the deployment of an **abp.io application** to **Azure**.
 
