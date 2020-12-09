@@ -42,7 +42,7 @@
 
 21. When the Build pipeline has finished. Click **on 1 published; 1 consumed**
 
-22. In the *1 published; 1 consumed* folder you should now have 2 zip Artifacts. 1 for the [YourAppName].Blazor project and 1 for the [YourAppName].HttpApi.Host project
+22. In the *1 published; 1 consumed* folder you should now have 2 zip Artifacts. 1 for the *[YourAppName].Blazor* project and 1 for the *[YourAppName].HttpApi.Host* project
 
 
 [Home](./../../README.md) | [Previous](Tutorial/../../Part3/Part3.md) | [Next](Tutorial/../../Part5/Part5.md)

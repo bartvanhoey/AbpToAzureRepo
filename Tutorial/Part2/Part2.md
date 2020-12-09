@@ -24,7 +24,7 @@
 
    ![Unresolved dependencies and Required assets](Tutorial/../Images/UnResolvedDependenciesAndRequiredAssets.jpg)
 
-6. Click **Yes** to add the *required assets to build and debug* your application. Select the **[YourAppName].HttpApi.Host** project in the *Select the project to launch* dropdown.
+6. Click **Yes** to add the *required assets to build and debug* your application. Select the *[YourAppName].HttpApi.Host* project in the *Select the project to launch* dropdown.
 
 7. Click on the **Restore** button to restore the *unresolved dependencies*.
 
@@ -42,13 +42,13 @@
 
     ![SwaggerUI window](Tutorial/../Images/SwaggerUI.jpg)
 
-13. Open a command prompt in the [YourAppName].Blazor folder and enter the command below to run the Blazor project.
+13. Open a command prompt in the *[YourAppName].Blazor* folder and enter the command below to run the Blazor project.
   
     ```bash
     dotnet run
     ```
 
-14. Navigate to the *applicationUrl* specified in the *launchSettings.json* file of the [YourAppName].Blazor project. You should get the ABP.IO Welcome window.
+14. Navigate to the *applicationUrl* specified in the *launchSettings.json* file of the *[YourAppName].Blazor* project. You should get the ABP.IO Welcome window.
 
     ![Abp Welcome window](Tutorial/../Images/AbpIoWelcomeWindow.jpg)
 
