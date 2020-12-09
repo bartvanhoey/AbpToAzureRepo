@@ -1,4 +1,4 @@
-## Part 3: Create an SQL Database on Azure and change connection string in appsettings.json files
+## Part 3: Create Azure SQL Database and change connection string in appsettings.Staging.json
 
 1. Login into the [Azure Portal](https://portal.azure.com/#home).
 
