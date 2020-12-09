@@ -20,31 +20,44 @@
 
 4. Rename the *aspnet-core* folder to [YourAppName].
 
-5. Open a command prompt in the [YourAppName].DbMigrator project and run the `dotnet run` to apply the database migrations.
+5. Open the abp application in VsCode. VsCode will show you 2 notifications (if not, hit CTRL+SHIFT+P Restart OmniSharp).
+
+   ![Unresolved dependencies and Required assets](Tutorial/../UnResolvedDependenciesAndRequiredAssets.jpg)
+
+6. Click **Yes** to add the *required assets to build and debug* your application. Select the **[YourAppName].HttpApi.Host** project in the *Select the project to launch* dropdown.
+
+7. Click on the **Restore** button to restore the *unresolved dependencies*.
+
+8. Replace the content of launch.json with this. Replace [AbpToAzure] with [YourAppName].
+
+9. Replace the content of tasks.json with this.Replace [AbpToAzure] with [YourAppName].
+
+
+10. Open a command prompt in the [YourAppName].DbMigrator project and run the `dotnet run` to apply the database migrations.
 
    ```bash
    dotnet run
    ```
 
-6. Open a command prompt in the [YourAppName].HttpApi.Host project to run the API project.
+11. Open a command prompt in the [YourAppName].HttpApi.Host project to run the API project.
 
    ```bash
    dotnet run
    ```
 
-7. Navigate to the *applicationUrl* specified in the *launchSettings.json* file of the [YourAppName].HttpApi.Host project. You should get the SwaggerUI window.
+12. Navigate to the *applicationUrl* specified in the *launchSettings.json* file of the [YourAppName].HttpApi.Host project. You should get the SwaggerUI window.
 
-8. Open a command prompt in the [YourAppName].Blazor folder and enter the command below to run the Blazor project.
+13. Open a command prompt in the [YourAppName].Blazor folder and enter the command below to run the Blazor project.
   
    ```bash
    dotnet run
    ```
 
-9. Navigate to the *applicationUrl* specified in the *launchSettings.json* file of the [YourAppName].Blazor project. You should get the ABP.IO Welcome window.
+11. Navigate to the *applicationUrl* specified in the *launchSettings.json* file of the [YourAppName].Blazor project. You should get the ABP.IO Welcome window.
 
-10. Stop both the API and the Blazor project by pressing `CTRL+C`.
+12. Stop both the API and the Blazor project by pressing `CTRL+C`.
 
-11. Open a command prompt in the root folder of your project and add, commit and push all your changes to your GitHub repository.
+13. Open a command prompt in the root folder of your project and add, commit and push all your changes to your GitHub repository.
 
   ```bash
   git add .
