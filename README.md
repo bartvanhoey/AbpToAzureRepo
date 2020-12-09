@@ -9,3 +9,7 @@ To follow along you need .NET 5.x and ABP.IO Platform v4.x installed. I use Visu
 [Part2: Create a new abp.io application](Tutorial/Part2/Part2.md)
 
 [Part 3: Create Azure SQL Database and change connection string in appsettings.Staging.json](Tutorial/Part3/Part3.md)
+
+[Part 4: Setup the Build pipeline in AzureDevops and publish the Build Artifacts](Tutorial/Part4/Part4.md)
+
+[Part 5: Create Web App in Azure Portal to deploy [YourAppName].HttpApi.Host project](Tutorial/Part4/Part4.md)

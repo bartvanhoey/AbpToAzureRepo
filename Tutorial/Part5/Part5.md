@@ -1,4 +1,4 @@
-## Part 5: Create a Web App in the Azure Portal to deploy [YourAppName].HttpApi.Host project
+## Part 5: Create Web App in Azure Portal to deploy [YourAppName].HttpApi.Host project
 
 1. Login into the [Azure Portal](https://portal.azure.com/#home).
 
