@@ -1,6 +1,6 @@
-# How to set up Continuous Deployment of an abp.io app
+# Continuous Deployment of an ABP Framework application
 
-In this **step-by-step tutorial** I will show you a possible **Continuous Deployment** setup in **AzureDevOps** to automate the deployment of an **abp.io application** to **Azure**.
+In this **step-by-step tutorial** I will show you a possible **Continuous Deployment** setup in **AzureDevOps** to automate the deployment of an **ABP Framework application** to **Azure**.
 
 To follow along you need .NET 5.x and ABP.IO Platform v4.x installed. I use Visual Studio Code as code editor.
 
