@@ -7,7 +7,7 @@
            "type": "process",
            "args": [
                "build",
-               "${workspaceFolder}/src/AbpToAzure.HttpApi.Host/AbpToAzure.HttpApi.Host.csproj",
+               "${workspaceFolder}/AbpToAzure/src/AbpToAzure.HttpApi.Host/AbpToAzure.HttpApi.Host.csproj",
                "/property:GenerateFullPaths=true",
                "/consoleloggerparameters:NoSummary"
            ],
@@ -19,7 +19,7 @@
            "type": "process",
            "args": [
                "build",
-               "${workspaceFolder}/src/AbpToAzure.DbMigrator/AbpToAzure.DbMigrator.csproj",
+               "${workspaceFolder}/AbpToAzure/src/AbpToAzure.DbMigrator/AbpToAzure.DbMigrator.csproj",
                "/property:GenerateFullPaths=true",
                "/consoleloggerparameters:NoSummary"
            ],
@@ -31,7 +31,7 @@
            "type": "process",
            "args": [
                "publish",
-               "${workspaceFolder}/src/AbpToAzure.HttpApi.Host/AbpToAzure.HttpApi.Host.csproj",
+               "${workspaceFolder}/AbpToAzure/src/AbpToAzure.HttpApi.Host/AbpToAzure.HttpApi.Host.csproj",
                "/property:GenerateFullPaths=true",
                "/consoleloggerparameters:NoSummary"
            ],
@@ -44,7 +44,7 @@
            "args": [
                "watch",
                "run",
-               "${workspaceFolder}/src/AbpToAzure.HttpApi.Host/AbpToAzure.HttpApi.Host.csproj",
+               "${workspaceFolder}/AbpToAzure/src/AbpToAzure.HttpApi.Host/AbpToAzure.HttpApi.Host.csproj",
                "/property:GenerateFullPaths=true",
                "/consoleloggerparameters:NoSummary"
            ],

@@ -258,3 +258,5 @@ src/AbpToAzure.IdentityServer/Logs/*
 src/AbpToAzure.HttpApi.Host/Logs/*
 src/AbpToAzure.HttpApi.Host/Logs/*
 src/AbpToAzure.DbMigrator/Logs/*
+src/AbpToAzure.Blazor.Server/Logs/*
+src/AbpToAzure.Blazor.Server.Tiered/Logs/*

@@ -7,7 +7,7 @@ using Volo.Abp.Account.Localization;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.Users;
 
-namespace AbpToAzure.Blazor
+namespace AbpToAzure.Blazor.Menus
 {
     public class AbpToAzureMenuContributor : IMenuContributor
     {
@@ -37,7 +37,7 @@ namespace AbpToAzure.Blazor
             context.Menu.Items.Insert(
                 0,
                 new ApplicationMenuItem(
-                    "AbpToAzure.Home",
+                    AbpToAzureMenus.Home,
                     l["Menu:Home"],
                     "/",
                     icon: "fas fa-home"
@@ -59,11 +59,10 @@ namespace AbpToAzure.Blazor
                 context.Menu.AddItem(new ApplicationMenuItem(
                     "Account.Manage",
                     accountStringLocalizer["ManageYourProfile"],
-                    $"{identityServerUrl.EnsureEndsWith('/')}Account/Manage",
+                    $"{identityServerUrl.EnsureEndsWith('/')}Account/Manage?returnUrl={_configuration["App:SelfUrl"]}",
                     icon: "fa fa-cog",
                     order: 1000,
-                    null,
-                    "_blank"));
+                    null));
             }
 
             return Task.CompletedTask;

@@ -8,7 +8,7 @@
           "name": "Blazor",
           "type": "blazorwasm",
           "request": "launch",
-          "cwd": "${workspaceFolder}/src/AbpToAzure.Blazor",
+          "cwd": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.Blazor",
           "url": "https://localhost:44307"
       },
       {
@@ -17,9 +17,9 @@
           "request": "launch",
           "preLaunchTask": "buildApi",
           // If you have changed target frameworks, make sure to update the program path.
-          "program": "${workspaceFolder}/src/AbpToAzure.HttpApi.Host/bin/Debug/net5.0/AbpToAzure.HttpApi.Host.dll",
+          "program": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.HttpApi.Host/bin/Debug/net5.0/AbpToAzure.HttpApi.Host.dll",
           "args": [],
-          "cwd": "${workspaceFolder}/src/AbpToAzure.HttpApi.Host",
+          "cwd": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.HttpApi.Host",
           "stopAtEntry": false,
           // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
           "serverReadyAction": {
@@ -39,9 +39,9 @@
           "request": "launch",
           "preLaunchTask": "buildApi",
           // If you have changed target frameworks, make sure to update the program path.
-          "program": "${workspaceFolder}/src/AbpToAzure.HttpApi.Host/bin/Debug/net5.0/AbpToAzure.HttpApi.Host.dll",
+          "program": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.HttpApi.Host/bin/Debug/net5.0/AbpToAzure.HttpApi.Host.dll",
           "args": [],
-          "cwd": "${workspaceFolder}/src/AbpToAzure.HttpApi.Host",
+          "cwd": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.HttpApi.Host",
           "stopAtEntry": false,
           // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
           "serverReadyAction": {
@@ -61,9 +61,9 @@
           "request": "launch",
           "preLaunchTask": "buildDbMigrator",
           // If you have changed target frameworks, make sure to update the program path.
-          "program": "${workspaceFolder}/src/AbpToAzure.DbMigrator/bin/Debug/net5.0/AbpToAzure.DbMigrator.dll",
+          "program": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.DbMigrator/bin/Debug/net5.0/AbpToAzure.DbMigrator.dll",
           "args": [],
-          "cwd": "${workspaceFolder}/src/AbpToAzure.DbMigrator",
+          "cwd": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.DbMigrator",
           "stopAtEntry": false,
           // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
           "serverReadyAction": {
@@ -83,9 +83,9 @@
           "request": "launch",
           "preLaunchTask": "buildDbMigrator",
           // If you have changed target frameworks, make sure to update the program path.
-          "program": "${workspaceFolder}/src/AbpToAzure.DbMigrator/bin/Debug/net5.0/AbpToAzure.DbMigrator.dll",
+          "program": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.DbMigrator/bin/Debug/net5.0/AbpToAzure.DbMigrator.dll",
           "args": [],
-          "cwd": "${workspaceFolder}/src/AbpToAzure.DbMigrator",
+          "cwd": "${workspaceFolder}/AbpToAzure/src/AbpToAzure.DbMigrator",
           "stopAtEntry": false,
           "env": {
               "ASPNETCORE_ENVIRONMENT": "Staging"

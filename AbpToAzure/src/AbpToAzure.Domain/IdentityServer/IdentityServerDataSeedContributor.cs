@@ -142,26 +142,6 @@ namespace AbpToAzure.IdentityServer
 
             var configurationSection = _configuration.GetSection("IdentityServer:Clients");
 
-            //Web Client
-            var webClientId = configurationSection["AbpToAzure_Web:ClientId"];
-            if (!webClientId.IsNullOrWhiteSpace())
-            {
-                var webClientRootUrl = configurationSection["AbpToAzure_Web:RootUrl"].EnsureEndsWith('/');
-
-                /* AbpToAzure_Web client is only needed if you created a tiered
-                 * solution. Otherwise, you can delete this client. */
-
-                await CreateClientAsync(
-                    name: webClientId,
-                    scopes: commonScopes,
-                    grantTypes: new[] { "hybrid" },
-                    secret: (configurationSection["AbpToAzure_Web:ClientSecret"] ?? "1q2w3e*").Sha256(),
-                    redirectUri: $"{webClientRootUrl}signin-oidc",
-                    postLogoutRedirectUri: $"{webClientRootUrl}signout-callback-oidc",
-                    frontChannelLogoutUri: $"{webClientRootUrl}Account/FrontChannelLogout",
-                    corsOrigins: new[] { webClientRootUrl.RemovePostFix("/") }
-                );
-            }
 
             //Console Test / Angular Client
             var consoleAndAngularClientId = configurationSection["AbpToAzure_App:ClientId"];
@@ -180,6 +160,7 @@ namespace AbpToAzure.IdentityServer
                     corsOrigins: new[] { webClientRootUrl.RemovePostFix("/") }
                 );
             }
+            
 
             // Blazor Client
             var blazorClientId = configurationSection["AbpToAzure_Blazor:ClientId"];
@@ -198,7 +179,9 @@ namespace AbpToAzure.IdentityServer
                     corsOrigins: new[] { blazorRootUrl.RemovePostFix("/") }
                 );
             }
-
+            
+            
+            
             // Swagger Client
             var swaggerClientId = configurationSection["AbpToAzure_Swagger:ClientId"];
             if (!swaggerClientId.IsNullOrWhiteSpace())
