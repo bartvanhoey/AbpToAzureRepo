@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <None Remove="appsettings.json" />
-      <None Remove="appsettings.Stagin.json" />
+    <None Remove="appsettings.Stagin.json" />
   </ItemGroup>
 
   <ItemGroup>
