@@ -101,7 +101,7 @@
 22. After the database migrations have completed, run the *ApiStaging* configuration from the *Debug window* to run the *[YourAppName].HttpApi.Host* project.
     Your API runs now locally but uses the *[YourAppName]Db* on Azure.
 
-23. Replace your password in the appsettings.Staging.json files with {your_password} as you don't want to publish them on GitHub.
+23. Replace your password/username in the appsettings.Staging.json files with {your_username} and {your_password} as you don't want to publish your credentials on GitHub.
 
 24. Update the *Nuget.Config* file in the root of your project. Otherwise the Build pipeline in the next part won't find some nuget packages.
 
