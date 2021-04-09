@@ -1,4 +1,4 @@
-## Part 5: Create a Web App in the Azure Portal to deploy [YourAppName].HttpApi.Host project
+## Part 5: Create Web App in Azure Portal to deploy [YourAppName].HttpApi.Host project
 
 1. Login into the [Azure Portal](https://portal.azure.com/#home).
 
@@ -24,16 +24,19 @@
 
 12. Click the **Review + create** button. Click the **Create** button next.
   
-    ![Web App Settings](Tutorial/../Images/CreateWebAppForAPI.jpg)
+    ![API Web App Settings](Tutorial/../Images/CreateWebAppForAPI.jpg)
 
 13. Click on **Go to resource** when the Web App has been created.
 
 14. Click on **Configuration** in the left menu and click + **+ New application setting** in the *Application settings* window.
 
-15. Enter *ASPNETCORE_ENVIRONMENT* in the *Name* field and *Staging* in the *Value* field. Click the **OK**, **Save** and **Continue** buttons.Close the *Configuration* window.
+15. Enter *ASPNETCORE_ENVIRONMENT* in the *Name* field and *Staging* in the *Value* field. Click the **OK**, **Save** and **Continue** buttons and close the *Configuration* window afterwards.
 
 16. Copy the URL of the Web App.
 
-[https://[YourAppName]api.azurewebsites.net](https://[YourAppName]api.azurewebsites.net)
+    ```html
+    [https://[YourAppName]api.azurewebsites.net](https://[YourAppName]api.azurewebsites.net)
+    
+    ```
 
 [Home](./../../README.md) | [Previous](Tutorial/../../Part4/Part4.md) | [Next](Tutorial/../../Part6/Part6.md)
