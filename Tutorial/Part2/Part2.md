@@ -12,13 +12,13 @@
    dotnet tool install -g Volo.Abp.Cli || dotnet tool update -g Volo.Abp.Cli
    ```
 
-3. Open a command prompt in the *GitHub repository folder* and create a *new abp Blazor* solution with the command below.
+3. Open a command prompt in the *GitHub repository folder* and create a *new ABP FRAMEWORK application with Blazor UI* with the command below.
 
    ```bash
    abp new YourAppName -u blazor -o YourAppName
    ```
 
-4. Open the abp application in VsCode. VsCode will show 2 notifications (if not, hit CTRL+SHIFT+P: Restart OmniSharp).
+4. Open the ABP application in VsCode. VsCode will show 2 notifications (if not, hit CTRL+SHIFT+P: Restart OmniSharp).
 
    ![Unresolved dependencies and Required assets](Tutorial/../Images/UnResolvedDependenciesAndRequiredAssets.jpg)
 

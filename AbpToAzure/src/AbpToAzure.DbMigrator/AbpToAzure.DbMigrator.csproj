@@ -38,4 +38,11 @@
     <None Remove="Logs\**" />
   </ItemGroup>
 
+  <ItemGroup>
+ <Content Include="appsettings.Staging.json">
+     <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+ </Content>
+</ItemGroup>
+
 </Project>

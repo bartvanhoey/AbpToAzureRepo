@@ -24,7 +24,7 @@
 
 12. Click **Set server firewall** tab menu item.
 
-13. Click on **Add Client IP** tab menu item and click the **Save** and **OK** buttons next.
+13. Click on **Add client IP** tab menu item and click the **Save** and **OK** buttons next.
 
 14. Close the Firewall settings window.
 
@@ -98,9 +98,10 @@
 
 21. Run the *DbMigratorStaging* configuration from the *Debug window* to apply the database migrations to the database in Azure.
 
-22. After the database migrations have completed, run the *ApiStaging* configuration from the *Debug window* to run the *[YourAppName].HttpApi.Host* project. Your API runs now locally but uses the *[YourAppName]Db* on Azure.
+22. After the database migrations have completed, run the *ApiStaging* configuration from the *Debug window* to run the *[YourAppName].HttpApi.Host* project.
+    Your API runs now locally but uses the *[YourAppName]Db* on Azure.
 
-23. Open a command prompt in the [YourAppName].HttpApi.Host project and set the Environment to Staging.
+23. Replace your password in the appsettings.Staging.json files with {your_password} as you don't want to publish them on GitHub.
 
 24. Open a command prompt in the root folder of your project and add, commit and push all your changes to your GitHub repository.
 
