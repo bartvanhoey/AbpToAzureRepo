@@ -12,13 +12,13 @@
 
 6. Enter *[YourAppName]API* in the *Name* input field.
 
-7. Select *.NET 5 (Early Access)* in the *Runtime stack* dropdown.
+7. Select *.NET 5* in the *Runtime stack* dropdown.
 
 8. Select *Windows* as *Operating System*.
 
 9. Select the same *Region* as in the SQL server you created in Part 3.
 
-10. Click on **Create new** in the Windows Plan. Name it *[YourAppName]WinPlan*.
+10. Click on **Create new** in the Windows Plan. Name it *[YourAppName]ServicePlan*.
 
 11. Click **Change size** in *Sku and size*. Go for the *Dev/Test Free F1* version and click the **Apply** button.
 
@@ -28,7 +28,7 @@
 
 13. Click on **Go to resource** when the Web App has been created.
 
-14. Click on **Configuration** in the left menu and click + **+ New application setting** in the *Application settings* window.
+14. Click on **Configuration** in the left menu and click **+ New application setting** in the *Application settings* window.
 
 15. Enter *ASPNETCORE_ENVIRONMENT* in the *Name* field and *Staging* in the *Value* field. Click the **OK**, **Save** and **Continue** buttons and close the *Configuration* window afterwards.
 
