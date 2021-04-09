@@ -24,7 +24,7 @@
 
 12. Select the *ASP.NET Core* template and click the **Apply** button.
 
-13. Enter *[YourAppName]BuildPipeline* in the pipeline *Name* input field and select *vs2017-win2016* in the *Agent Specification* dropdown.
+13. Enter *[YourAppName]BuildPipeline* in the pipeline *Name* input field and select *win-2019* in the *Agent Specification* dropdown.
 
 14. Click on the **plus sign** to *Add a task to Agent job 1*.
 

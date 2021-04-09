@@ -103,7 +103,18 @@
 
 23. Replace your password in the appsettings.Staging.json files with {your_password} as you don't want to publish them on GitHub.
 
-24. Open a command prompt in the root folder of your project and add, commit and push all your changes to your GitHub repository.
+24. Update the *Nuget.Config* file in the root of your project. Otherwise the Build pipeline in the next part won't find some nuget packages.
+
+```html
+<configuration>
+  <packageSources>
+    <add key="BlazoriseMyGet" value="https://www.myget.org/F/blazorise/api/v3/index.json" />
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+  </packageSources>
+</configuration>
+```
+
+25. Open a command prompt in the root folder of your project and add, commit and push all your changes to your GitHub repository.
 
     ```bash
     git add .
