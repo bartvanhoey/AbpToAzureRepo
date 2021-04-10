@@ -54,3 +54,4 @@
   ![Test Task](Tutorial/../Images/TestTask.jpg)
   ![Publish Task](Tutorial/../Images/Publish.jpg)
   ![Publish Artifact Task](Tutorial/../Images/PublishArtifactTask.jpg)
+  
