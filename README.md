@@ -1,4 +1,4 @@
-# Continuous Deployment of an ABP Framework application
+# Continuous Deployment of ABP Framework applications
 
 In this **step-by-step tutorial** I will show you a possible **Continuous Deployment** setup in **AzureDevOps** to automate the deployment of an **ABP Framework application** to **Azure**.
 
