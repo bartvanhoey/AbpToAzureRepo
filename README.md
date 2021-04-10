@@ -6,11 +6,11 @@ A **step-by-step** tutorial on how to set up **Continuous Deployment in Azure De
 
 [![Build Status](https://dev.azure.com/AbpToAzureOrg/AbpToAzure/_apis/build/status/AbpToAzureBuildPipeline?branchName=gh-pages)](https://dev.azure.com/AbpToAzureOrg/AbpToAzure/_build/latest?definitionId=1&branchName=gh-pages)
 
-To follow along you need .NET 5.x and ABP.IO Platform v4.x installed. I use Visual Studio Code as code editor.
+To follow along you need .NET 5.x and ABP Framework v4.x installed. I use Visual Studio Code as code editor.
 
 [Part 1: Create a new GitHub repository](Tutorial/Part1/Part1.md)
 
-[Part 2: Create a new abp.io application](Tutorial/Part2/Part2.md)
+[Part 2: Create a new ABP Framework application](Tutorial/Part2/Part2.md)
 
 [Part 3: Create Azure SQL Database and change connection string in appsettings.Staging.json](Tutorial/Part3/Part3.md)
 
