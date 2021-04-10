@@ -114,7 +114,7 @@
       ```
   
   18. Enter the command below in the *home/site/wwwroot* folder of the *Debug Console* to start the application.
-      You should see the detailed error description. The file *tempkey.rsa* is missing.
+      You should see the detailed error description. The file *tempkey.jwk* is missing.
   
       ```html
       dotnet [YourAppName].HttpApi.Host.dll
@@ -170,8 +170,9 @@
 
       ![Login failed for user](Images/login_failed_for_username.jpg)
 
-   We will need to tell the system to use the correct credentials for the placeholders {YourUserName} and {YourPassword} in the connection string of the appsettings.Staging.json file.
-  32. Go to your AzureDevOps project, Pipelines, Releases. Click the **Edit** button.
+        We will need to tell the _Release Pipeline_ to use the correct credentials for the placeholders {YourUserName} and {YourPassword} in the connection string of the appsettings.Staging.json file.
+
+  32. Go to the AzureDevOps project, Pipelines, Releases and click the **Edit** button.
   33. Click on the **1 job, 1 task** link and click on the **Deploy Azure App Service** task.
   34. Enter _**/appsettings.Staging.json_ in the *JSON variable substitution* input in *File Transforms & Variable Substitution Options*
       ![JSON variable substitution](Images/json_variable_substitution.jpg)
