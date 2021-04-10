@@ -176,7 +176,7 @@
   33. Click on the **1 job, 1 task** link and click on the **Deploy Azure App Service** task.
   34. Enter _**/appsettings.Staging.json_ in the *JSON variable substitution* input in *File Transforms & Variable Substitution Options*
       ![JSON variable substitution](Images/json_variable_substitution.jpg)
-  35. Click on the **Variables** tab and add the variable ConnectionStrings.Default as in the image below
+  35. Click on the **Variables** tab and add the variable **ConnectionStrings.Default** as in the image below
       ![JSON variable substitution](Images/pipeline_variables_connection_string_with_correct_credentials.jpg)
   36. Click on **Create release** to create a new release. When the release has finished navigate to the your Web App Url.
   37. Your *[YourAppName].HttpApi.Host* project should now **be up and running** and the *Swagger* page is served by your Web App in Azure.
