@@ -140,28 +140,45 @@
       git push
       ```
 
-  21. Wait until the new Build and Release have finished and the Deployment has succeeded.
+  21. Wait until the new Build and Release pipelines have finished and the Deployment has succeeded.
 
   22. Navigate to the URL of the Web App to see if the error is gone.
-1.  It's possible that you get another error: *This page isn’t working*.
-2.  Open the *Debug Console* in the *Kudu* window by navigating to *[YourAppNameapi].scm.azurewebsites.net*.
-```htmlhttps://[YourAppName]api.scm.azurewebsites.net```
-25. Enter the command below in the *wwwroot* folder of the *Debug Console* to get a more specific error description.
-```htmldotnet [YourAppName].HttpApi.Host.dll```
-26. Probably you receive the error description below.
-<Figure Size="FigureSize.None">
-  <FigureImage Source="images/client_not_allowed_to_access_server.jpg" />
-</Figure>
-27. Go to your *Azure Portal* and select your *[YourAppName]server*.
-28. Click on <b>Firewalls and virtual networks</b> in the left menu.
-29. Select <b>Yes</b> in the *Allow Azure services and resources to access this server* toggle.
-30. Click the <b>Save</b> button. Click <b>OK</b> in the *Successfully updated server firewall rules* window. Close the window .
-31. Navigate to the URL of the Web App and Refresh the page.
-32. Your *[YourAppName].HttpApi.Host* project should now <b>be up and running</b> and the *Swagger* page is served by your Web App in Azure.
-<Figure Size="FigureSize.None">
-  <FigureImage Source="images/swagger_page_served_by_web_app_on_azure.jpg" />
-</Figure>
+  
+  23. It's possible that you get another error: *This page isn’t working*.
+  24. Open the *Debug Console* in the *Kudu* window by navigating to *[YourAppName]api.scm.azurewebsites.net*.
 
+      ```html
+      https://[YourAppName]api.scm.azurewebsites.net
+      ```
 
+  25. Enter the command below in the *wwwroot* folder of the *Debug Console* to get a more specific error description.
+  
+      ```html
+      dotnet [YourAppName].HttpApi.Host.dll
+      ```
+
+  26. Probably you receive the error description below.
+  
+      ![Client not allowed to access server](Images/client_not_allowed_to_access_server.jpg)
+
+  27. Navigate to the *Azure Portal* and go to the *[YourAppName]server*.
+
+  28. Click on **Firewalls and virtual networks** in the left menu.
+  29. Select **Yes** in the *Allow Azure services and resources to access this server* toggle.
+  30. Click the **Save** button. Click **OK** in the *Successfully updated server firewall rules* window. Close the window .
+  31. Navigate again to the URL of the Web App and Refresh the page. The login will fail for the specified user because of incorrect credentials in the appsettings.Staging.json file.
+
+      ![Login failed for user](Images/login_failed_for_username.jpg)
+
+   We will need to tell the system to use the correct credentials for the placeholders {YourUserName} and {YourPassword} in the connection string of the appsettings.Staging.json file.
+  32. Go to your AzureDevOps project, Pipelines, Releases. Click the **Edit** button.
+  33. Click on the **1 job, 1 task** link and click on the **Deploy Azure App Service** task.
+  34. Enter _**/appsettings.Staging.json_ in the *JSON variable substitution* input in *File Transforms & Variable Substitution Options*
+      ![JSON variable substitution](Images/json_variable_substitution.jpg)
+  35. Click on the **Variables** tab and add the variable ConnectionStrings.Default as in the image below
+      ![JSON variable substitution](Images/pipeline_variables_connection_string_with_correct_credentials.jpg)
+  36. Click on **Create release** to create a new release. When the release has finished navigate to the your Web App Url.
+  37. Your *[YourAppName].HttpApi.Host* project should now **be up and running** and the *Swagger* page is served by your Web App in Azure.
+    ![Swagger page served by web app on Azure](Images/swagger_window.jpg)
 
 [Home](./../../README.md) | [Previous](Tutorial/../../Part6/Part6.md) | [Next](Tutorial/../../Part8/Part8.md)
