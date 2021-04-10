@@ -95,39 +95,56 @@
       // other code here ...
       ```
 
-  1.  Add, Commit and Push all your changes to your GitHub repository.
- ```html
-git add .
-git commit -m CommentOutDebugStatements
-git push
-```
-15. Wait until the new Build and new Release have finished and the Deployment has succeeded.
-16. Navigate to the URL of the Web App. You should see the same error *An error occurred while starting the application.* again.
- 17. Open the *Debug Console* in the *Kudu* window by navigating to [YourAppNameapi].scm.azurewebsites.net.
-```htmlhttps://[YourAppName]api.scm.azurewebsites.net```
-18. Enter the command below in the wwwroot folder of the *Debug Console* to start the application. Now you should see the detailed error description. The file *tempkey.rsa* is missing.
-```htmldotnet [YourAppName].HttpApi.Host.dll```
-<Figure Size="FigureSize.None">
-  <FigureImage Source="images/could_not_find_file_tempkey.rsa.jpg" />
-</Figure>
-19. Add the section below to the *[YourAppName].HttpApi.Host.csproj* file to copy the *missing tempkey.rsa* file to the output directory .
-```html
-&lt;ItemGroup&gt
-&lt;None Update="tempkey.rsa"&gt
-&lt;CopyToOutputDirectory&gtPreserveNewest&lt;/CopyToOutputDirectory&gt
-&lt;/None&gt
-&lt;/ItemGroup&gt
-```
-20. Add, Commit and Push all your changes to your GitHub repository.
-```html
-git add .
-git commit -m CopyToOutputDirectory
-git push
-```
-21. Wait until the new Build and Release have finished and the Deployment has succeeded.
-22. Navigate to the URL of the Web App to see if the error is gone.
-23. It's possible that you get another error: *This page isn’t working*.
-24. Open the *Debug Console* in the *Kudu* window by navigating to *[YourAppNameapi].scm.azurewebsites.net*.
+  14. Add, Commit and Push all your changes to your GitHub repository.
+
+      ```html
+      git add .
+      git commit -m CommentOutDebugStatements
+      git push
+      ```
+
+  15. Wait until the new Build and new Release have finished and the Deployment has succeeded.
+
+  16. Navigate to the URL of the Web App. You should see the same error *An error occurred while starting the application.* again.
+  
+  17. Open the *Debug Console* in the *Kudu* window by navigating to [YourAppName]api.scm.azurewebsites.net.
+  
+      ```html
+      https://[YourAppName]api.scm.azurewebsites.net
+      ```
+  
+  18. Enter the command below in the *home/site/wwwroot* folder of the *Debug Console* to start the application.
+      You should see the detailed error description. The file *tempkey.rsa* is missing.
+  
+      ```html
+      dotnet [YourAppName].HttpApi.Host.dll
+      ```
+
+      ![Could not find file tempkey.jwk](Images/could_not_find_file_tempkey.jwk.jpg)
+
+  19. Add the section below to the *[YourAppName].HttpApi.Host.csproj* file to copy the *missing tempkey.jwk* file to the output directory.
+
+      ```html
+      <ItemGroup>
+          <None Update="tempkey.jwk">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          </None>
+        </ItemGroup>
+      ```
+
+  20. Add, Commit and Push all your changes to your GitHub repository.
+
+      ```html
+      git add .
+      git commit -m CopyTempkeyJwkToOutputDirectory
+      git push
+      ```
+
+  21. Wait until the new Build and Release have finished and the Deployment has succeeded.
+
+  22. Navigate to the URL of the Web App to see if the error is gone.
+1.  It's possible that you get another error: *This page isn’t working*.
+2.  Open the *Debug Console* in the *Kudu* window by navigating to *[YourAppNameapi].scm.azurewebsites.net*.
 ```htmlhttps://[YourAppName]api.scm.azurewebsites.net```
 25. Enter the command below in the *wwwroot* folder of the *Debug Console* to get a more specific error description.
 ```htmldotnet [YourAppName].HttpApi.Host.dll```
