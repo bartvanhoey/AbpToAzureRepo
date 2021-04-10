@@ -1,6 +1,6 @@
-## Part 6: Create Release pipeline in AzureDevops and deploy [YourAppName].HttpApi.Host project
+## Part 6: Create Release pipeline in AzureDevops and Deploy HttpApi.Host project
 
-1. Sign in into [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/" target="_blank).
+1. Sign in into [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/").
 
 2. Click on [YourAppName]Proj and click on **Releases** in the *Pipelines* menu.
 
@@ -41,7 +41,7 @@
 
 19. Click **Create release** in the top menu. Click **Create** to create a release.
 
-20. Click on the *Pipeline* tab and wait until the Deployment succeeds.
+20. Click on the **Pipeline** tab and wait until the Deployment succeeds.
    ![Release API succeeded](Images/release_api_staging_succeeded.jpg)
 
 21. Open a browser and navigate to the URL of your Web App.
@@ -53,6 +53,6 @@
 22. It's possible that you receive the error *HTTP Error 500.30 - ANCM In-Process Start Failure*
     ![HTTP Error 500.30 - ANCM In-Process Start Failure](Images/HTTP_Error_500.30_ANCM_In_Process_Start_Failure.jpg)
 
-23. The Deployment succeeded, but the Web App is still having issues. We will fix them in the next part.
+23. The Deployment succeeded, but the API project is still having issues. We will fix them in the next part.
 
 [Home](./../../README.md) | [Previous](Tutorial/../../Part5/Part5.md) | [Next](Tutorial/../../Part7/Part7.md)
