@@ -12,13 +12,13 @@
 
 6. Enter [YourAppName] in the *Name* input field
 
-7. Select *.NET 5 (Early Access)* in the *Runtime stack* dropdown.
+7. Select *.NET 5* in the *Runtime stack* dropdown.
 
 8. Select *Windows* as *Operating System*.
 
 9. Select the same *Region* as in the SQL server you created in Part 3.
 
-10. Select *[YourAppName]WinPlan* in the *Windows Plan* dropdown.
+10. Select *[YourAppName]ServicePlan* in the *Windows Plan* dropdown.
 
 11. Go for the *Dev/Test Free F1* version in the *Sku and size* section.
 
