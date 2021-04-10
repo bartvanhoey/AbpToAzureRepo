@@ -25,7 +25,7 @@
   14. Navigate to the URL of your Blazor Web App after the finishes and open the *Developer Tools (F12)* of your browser.
   15. You probably see the error below in the *Console* window of your browser.
 
-      ![Cors issue](Images\blazor_deployment_succeeded_cors_issue.jpg)
+      ![Cors issue](Images/blazor_deployment_succeeded_cors_issue.jpg)
 
   16. As you can see the deployment succeeded, but the Web App is having issues. We will fix them in the next part.
 
