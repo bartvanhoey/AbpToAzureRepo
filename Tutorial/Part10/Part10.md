@@ -8,7 +8,7 @@
 
   2. You probably receive a CORS error related when trying to call the _api/abp/api-definition_ API endpoint.
 
-      ![Cors error](Images\Images/blazor_deployment_succeeded_cors_issue.jpg)
+      ![Cors error](Images/blazor_deployment_succeeded_cors_issue.jpg)
 
   3. Add the blazor web app url to the _RedirectAllowedUrls_ section in *appsettings.Staging.json* of the *[YourAppName].HttpApi.Host* project.
   
@@ -28,7 +28,7 @@
       git push
       ```html
 
-  5. Pushing changes to your GitHub repository triggers a new Build and when finished, a new Release should start.
+  5. Pushing changes to your GitHub repository triggers a new Build and when finished, a new Release will start.
   6. After the Release finishes, navigate to the URL of the Blazor Web App. You should see the index page of your Blazor Web App by now.
   7. There is still another issue with the Web App when you click the Log in link to navigate to the login page.
      (Open the Developers Tools (F12)  to see the error description). You probably receive error *Refused to display ... in a frame because it set 'X-Frame-Options' to 'sameorigin'*
