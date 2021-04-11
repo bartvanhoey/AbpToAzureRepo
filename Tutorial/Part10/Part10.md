@@ -10,12 +10,12 @@
 
       ![Cors error](Images/blazor_deployment_succeeded_cors_issue.jpg)
 
-  3. Add the blazor web app url to the _RedirectAllowedUrls_ section in *appsettings.Staging.json* of the *[YourAppName].HttpApi.Host* project.
+  3. Add the blazor web app url to the _CorsOrigins_ section in *appsettings.Staging.json* of the *[YourAppName].HttpApi.Host* project.
   
       ```json
       "App": {
         "SelfUrl": "https://localhost:44321",
-      " CorsOrigins": "https://*.AbpToAzure.com,https://localhost:44307",
+      " CorsOrigins": "https://*.AbpToAzure.com,https://localhost:44307,https://[YourAppName].azurewebsites.net",
         "RedirectAllowedUrls": "http://localhost:4200,https://localhost:44307,https://[YourAppName].azurewebsites.net"
       },
       ```
