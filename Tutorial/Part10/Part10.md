@@ -6,7 +6,7 @@
       https://[YourAppName].azurewebsites.net
       ```  
 
-  2. You probably receive a CORS related when trying to call the _api/abp/api-definition_ API endpoint.
+  2. You probably receive a CORS error related when trying to call the _api/abp/api-definition_ API endpoint.
 
       ![Cors error](Images\Images/blazor_deployment_succeeded_cors_issue.jpg)
 
