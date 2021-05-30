@@ -4,15 +4,17 @@ using AbpToAzure.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace AbpToAzure.Migrations
 {
     [DbContext(typeof(AbpToAzureMigrationsDbContext))]
-    partial class AbpToAzureMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210530151943_BookAdded")]
+    partial class BookAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

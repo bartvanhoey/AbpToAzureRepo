@@ -5,6 +5,7 @@ using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.Identity;
 using Volo.Abp.Users.EntityFrameworkCore;
+using AbpToAzure.Books;
 
 namespace AbpToAzure.EntityFrameworkCore
 {
@@ -21,6 +22,7 @@ namespace AbpToAzure.EntityFrameworkCore
     public class AbpToAzureDbContext : AbpDbContext<AbpToAzureDbContext>
     {
         public DbSet<AppUser> Users { get; set; }
+        public DbSet<Book> Books { get; set; }
 
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside AbpToAzureDbContextModelCreatingExtensions.ConfigureAbpToAzure

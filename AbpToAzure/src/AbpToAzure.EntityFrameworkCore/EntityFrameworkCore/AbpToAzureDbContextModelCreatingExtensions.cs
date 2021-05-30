@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using AbpToAzure.Books;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace AbpToAzure.EntityFrameworkCore
 {
@@ -17,6 +19,14 @@ namespace AbpToAzure.EntityFrameworkCore
             //    b.ConfigureByConvention(); //auto configure for the base class props
             //    //...
             //});
+            builder.Entity<Book>(b =>
+            {
+                b.ToTable(AbpToAzureConsts.DbTablePrefix + "Books", AbpToAzureConsts.DbSchema);
+                b.ConfigureByConvention();
+            
+                b.Property(x => x.Name).IsRequired().HasMaxLength(128 );
+                // b.HasIndex(x => x.Name);
+            });
         }
     }
 }

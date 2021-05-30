@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using AbpToAzure.Books;
+using AutoMapper;
 
 namespace AbpToAzure
 {
@@ -9,6 +10,9 @@ namespace AbpToAzure
             /* You can configure your AutoMapper mapping configuration here.
              * Alternatively, you can split your mapping configurations
              * into multiple profile classes for a better organization. */
+
+             CreateMap<Book, BookDto>();
+             CreateMap<CreateUpdateBookDto, Book>();
         }
     }
 }
